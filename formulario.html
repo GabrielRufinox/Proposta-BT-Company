@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="./icon.jpg" type="image/x-icon">
+    <title>Formulário de Briefing - BT Company</title>
+   <link rel="stylesheet" href="./style.css">
+   <script src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <div class="logo">BT</div>
+            <div class="company-name">Company</div>
+            <div class="tagline">WEB DEVELOPMENT</div>
+        </header>
+        
+        <!-- Introdução -->
+        <div class="intro">
+            <h1>Formulário de Briefing</h1>
+            <p>Olá! Estamos muito felizes em trabalhar no desenvolvimento do seu site. Para criarmos a melhor experiência possível, precisamos conhecer melhor o seu negócio.</p>
+            <p style="margin-top: 15px;"><strong>Por favor, preencha as informações abaixo com o máximo de detalhes.</strong> Quanto mais informações você nos fornecer, melhor será o resultado final!</p>
+        </div>
+        
+        <!-- Formulário -->
+        <form action="https://formsubmit.co/bt.companydg@gmail.com" method="POST" id="briefingForm" class="form-section" enctype="multipart/form-data">
+            <!-- Configurações do FormSubmit (campos ocultos) -->
+            <input type="hidden" name="_subject" value="🎯 Novo Briefing de Cliente - BT Company">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_autoresponse" value="Obrigado por enviar suas informações! A equipe BT Company entrará em contato em até 24 horas.">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            
+            <div class="success-message" id="successMessage">
+                ✓ Informações recebidas com sucesso! Em breve entraremos em contato.
+            </div>
+            
+            <!-- 1. Nome da Empresa -->
+            <div class="form-group">
+                <label>
+                    <span class="label-number">1</span>
+                    Nome da Empresa
+                </label>
+                <input type="text" name="empresa" placeholder="Ex: Padaria do João" required>
+                <div class="helper-text">Nome completo da sua empresa ou negócio</div>
+            </div>
+            
+            <!-- 2. Descrição Breve -->
+            <div class="form-group large-textarea">
+                <label>
+                    <span class="label-number">2</span>
+                    Descrição Breve
+                </label>
+                <textarea name="descricao" placeholder="Conte-nos sobre o que sua empresa faz, há quanto tempo está no mercado, qual é o diferencial do seu negócio..." required></textarea>
+                <div class="helper-text">O que a empresa faz? Qual é a história e o propósito do negócio?</div>
+            </div>
+            
+            <!-- 3. Produtos Oferecidos -->
+            <div class="form-group large-textarea">
+                <label>
+                    <span class="label-number">3</span>
+                    Produtos ou Serviços Oferecidos
+                </label>
+                <textarea name="produtos" placeholder="Liste os principais produtos ou serviços que você oferece. Ex: Pães artesanais, bolos personalizados, salgados..." required></textarea>
+                <div class="helper-text">Descreva os produtos/serviços que devem aparecer no site</div>
+            </div>
+            
+            <!-- 4. Público-Alvo -->
+            <div class="form-group">
+                <label>
+                    <span class="label-number">4</span>
+                    Público-Alvo
+                </label>
+                <textarea name="publico" placeholder="Quem são seus clientes? Ex: Famílias da região, jovens de 18-35 anos, empresas locais..." required></textarea>
+                <div class="helper-text">Quem você quer alcançar com o site? Idade, perfil, localização...</div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <!-- 5. Logo e Identidade Visual -->
+            <div class="form-group">
+                <label>
+                    <span class="label-number">5</span>
+                    Cores da Marca
+                
+            <!-- Cores da Marca -->
+            <div class="form-group">
+                <label>Paleta de cores: </label>
+                <div class="input-grid">
+                    <input type="text" name="cor1" placeholder="Ex: Azul (#0066FF)">
+                    <input type="text" name="cor2" placeholder="Ex: Verde (#00AA00)">
+                </div>
+                <div class="helper-text">Se souber os códigos das cores, informe aqui</div>
+            </div>
+            
+            <!-- Fontes -->
+            <div class="form-group">
+                <label>Fontes Utilizadas (opcional)</label>
+                <input type="text" name="fontes" placeholder="Ex: Montserrat, Arial, Open Sans...">
+                <div class="helper-text">Nome das fontes da identidade visual, se houver</div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            
+                    <span class="label-number">6</span>
+                 Imagens que voçe gostaria no Site
+            
+            <!-- Preferências de Imagens -->
+            <div class="form-group">
+                <label>Tipos :</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="img1" name="img_produtos" value="produtos">
+                        <label for="img1">Fotos dos produtos/serviços</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="img2" name="img_estabelecimento" value="estabelecimento">
+                        <label for="img2">Fotos do estabelecimento/fachada</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="img3" name="img_equipe" value="equipe">
+                        <label for="img3">Fotos da equipe</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="img4" name="img_banco" value="banco">
+                        <label for="img4">Imagens de banco de imagens (nós escolhemos)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <!-- 7. Informações de Contato -->
+            <div class="form-group">
+                <label>
+                    <span class="label-number">7</span>
+                    Informações de Contato
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label>Telefone Principal</label>
+                <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+            
+            <div class="form-group">
+                <label>E-mail</label>
+                <input type="email" name="email" placeholder="contato@suaempresa.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label>WhatsApp</label>
+                <input type="tel" name="whatsapp" placeholder="(XX) XXXXX-XXXX">
+                <div class="helper-text">Se for diferente do telefone principal</div>
+            </div>
+            
+            <div class="form-group">
+                <label>Endereço Completo</label>
+                <textarea name="endereco" placeholder="Rua, número, bairro, cidade - Estado, CEP"></textarea>
+            </div>
+            
+            <!-- Redes Sociais -->
+            <div class="form-group">
+                <label>Redes Sociais</label>
+                <input type="url" name="instagram" placeholder="Instagram (link completo)" style="margin-bottom: 10px;">
+                <input type="url" name="facebook" placeholder="Facebook (link completo)" style="margin-bottom: 10px;">
+                <input type="url" name="linkedin" placeholder="LinkedIn (link completo)" style="margin-bottom: 10px;">
+                <input type="url" name="outras_redes" placeholder="Outras redes sociais">
+            </div>
+            
+            <div class="divider"></div>
+            
+            <!-- Informações Adicionais -->
+            <div class="form-group large-textarea">
+                <label>Informações Adicionais (opcional)</label>
+                <textarea name="informacoes_adicionais" placeholder="Existe algo mais que você gostaria que soubéssemos? Sites que você admira? Funcionalidades específicas que deseja? Conte-nos aqui!"></textarea>
+            </div>
+            
+            <!-- Seção Final -->
+            <div class="final-section">
+                <h3>Próximos Passos</h3>
+                <p><strong>Após o envio deste formulário:</strong></p>
+                <p style="margin-top: 10px;">
+                    1. Vamos analisar todas as informações fornecidas<br>
+                    2. Entraremos em contato em até 24 horas para esclarecer possíveis dúvidas<br>
+                    3. Iniciaremos o desenvolvimento do seu site<br>
+                    4. Você receberá atualizações durante todo o processo
+                </p>
+                <p style="margin-top: 15px; font-size: 13px; color: #7A7A7A;">
+                    <strong>Dúvidas?</strong> Entre em contato conosco através do WhatsApp ou e-mail no rodapé desta página.
+                </p>
+            </div>
+        </form>
+        
+        <!-- Botão de Envio -->
+        <div class="submit-section">
+            <button type="submit" form="briefingForm" class="submit-button">
+                Enviar Informações
+            </button>
+            <p style="margin-top: 20px; font-size: 13px; color: #7A7A7A;">
+                Ao enviar, você concorda com o início do desenvolvimento conforme o pacote contratado
+            </p>
+        </div>
+        
+        <!-- Rodapé -->
+        <footer>
+            <div class="contact-info">
+                <strong>BT Company</strong> | Web Development<br>
+                 📧 bt.companydg@gmail.com<br>
+                📱 (21) 96468-0111 <br>
+                🌐 www.btcompany.com
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,357 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: #F8F8F8;
+            color: #4A4A4A;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(26, 35, 50, 0.1);
+        }
+        
+        /* Cabeçalho */
+        header {
+            background: #1A2332;
+            color: white;
+            padding: 60px 50px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 72px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        
+        .company-name {
+            font-size: 32px;
+            font-weight: normal;
+            margin-top: -10px;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            letter-spacing: 3px;
+            margin-top: 15px;
+            opacity: 0.8;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Seção Principal */
+        .hero {
+            padding: 50px;
+            border-bottom: 1px solid #E5E5E5;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            color: #1A2332;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: #4A4A4A;
+            line-height: 1.8;
+        }
+        
+        .client-info {
+            background: #F8F8F8;
+            padding: 30px 50px;
+            border-left: 4px solid #1A2332;
+            margin: 30px 50px;
+        }
+        
+        .client-info strong {
+            color: #1A2332;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .client-info p {
+            margin-top: 5px;
+            font-size: 18px;
+        }
+        
+        /* Seção de Conteúdo */
+        .content {
+            padding: 50px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section h2 {
+            font-size: 28px;
+            color: #1A2332;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #E5E5E5;
+        }
+        
+        /* Pacotes */
+        .packages {
+            display: grid;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .package {
+            border: 2px solid #E5E5E5;
+            padding: 35px;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .package:hover {
+            border-color: #1A2332;
+            box-shadow: 0 5px 20px rgba(26, 35, 50, 0.1);
+        }
+        
+        .package.featured {
+            border-color: #1A2332;
+            background: #F8F8F8;
+        }
+        
+        .badge {
+            position: absolute;
+            top: -12px;
+            right: 30px;
+            background: #1A2332;
+            color: white;
+            padding: 5px 20px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .package h3 {
+            font-size: 24px;
+            color: #1A2332;
+            margin-bottom: 15px;
+        }
+        
+        .price {
+            font-size: 42px;
+            color: #1A2332;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .price-note {
+            font-size: 14px;
+            color: #7A7A7A;
+            margin-top: -10px;
+            margin-bottom: 25px;
+        }
+        
+        .features {
+            list-style: none;
+            margin: 25px 0;
+        }
+        
+        .features li {
+            padding: 12px 0;
+            border-bottom: 1px solid #E5E5E5;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+        
+        .features li:last-child {
+            border-bottom: none;
+        }
+        
+        .features li:before {
+            content: "✓";
+            color: #2D5F4C;
+            font-weight: bold;
+            margin-right: 15px;
+            font-size: 18px;
+        }
+        
+        /* Informações Adicionais */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .info-box {
+            padding: 25px;
+            border-left: 4px solid #1A2332;
+            background: #F8F8F8;
+        }
+        
+        .info-box h3 {
+            color: #1A2332;
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .info-box p, .info-box ul {
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+        
+        .info-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .info-box li {
+            padding: 8px 0;
+        }
+        
+        /* Observações */
+        .notes {
+            background: #F8F8F8;
+            padding: 30px;
+            margin-top: 30px;
+            border-left: 4px solid #3A5A7C;
+        }
+        
+        .notes h3 {
+            color: #1A2332;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .notes ul {
+            list-style: none;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+        
+        .notes li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .notes li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3A5A7C;
+            font-weight: bold;
+        }
+        
+        /* Call to Action */
+        .cta {
+            text-align: center;
+            padding: 50px;
+            background: #1A2332;
+            color: white;
+        }
+        
+        .cta h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #1A2332;
+            padding: 18px 50px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            transition: all 0.3s;
+            letter-spacing: 1px;
+        }
+        
+        .cta-button:hover {
+            background: #F8F8F8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Rodapé */
+        footer {
+            padding: 40px 50px;
+            border-top: 1px solid #E5E5E5;
+            text-align: center;
+        }
+        
+        .contact-info {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #7A7A7A;
+            line-height: 2;
+        }
+        
+        .contact-info strong {
+            color: #1A2332;
+        }
+        
+        .validity {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #E5E5E5;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            color: #7A7A7A;
+        }
+        
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            header, .hero, .content, .cta, footer {
+                padding: 30px 25px;
+            }
+            
+            .logo {
+                font-size: 48px;
+            }
+            
+            .company-name {
+                font-size: 24px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .price {
+                font-size: 36px;
+            }
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            .cta-button {
+                display: none;
+            }
+        }

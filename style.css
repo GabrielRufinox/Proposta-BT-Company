@@ -1,0 +1,400 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #F8F8F8;
+            color: #4A4A4A;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(26, 35, 50, 0.1);
+            overflow: hidden;
+        }
+        
+        /* Cabeçalho */
+        header {
+            background: #1A2332;
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 56px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+        
+        .company-name {
+            font-family: Georgia, serif;
+            font-size: 28px;
+            font-weight: normal;
+            margin-top: -5px;
+        }
+        
+        .tagline {
+            font-size: 12px;
+            letter-spacing: 3px;
+            margin-top: 15px;
+            opacity: 0.8;
+        }
+        
+        /* Introdução */
+        .intro {
+            padding: 40px;
+            border-bottom: 2px solid #E5E5E5;
+        }
+        
+        .intro h1 {
+            font-family: Georgia, serif;
+            font-size: 32px;
+            color: #1A2332;
+            margin-bottom: 20px;
+        }
+        
+        .intro p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #4A4A4A;
+        }
+        
+        .intro p strong {
+            color: #1A2332;
+        }
+        
+        /* Formulário */
+        .form-section {
+            padding: 40px;
+        }
+        
+        .form-group {
+            margin-bottom: 30px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1A2332;
+            margin-bottom: 10px;
+        }
+        
+        .form-group .label-number {
+            display: inline-block;
+            background: #1A2332;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        
+        .form-group .helper-text {
+            font-size: 13px;
+            color: #7A7A7A;
+            margin-top: 5px;
+            font-style: italic;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="url"],
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #E5E5E5;
+            border-radius: 4px;
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+            transition: all 0.3s;
+            background: white;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1A2332;
+            box-shadow: 0 0 0 3px rgba(26, 35, 50, 0.1);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form-group.large-textarea textarea {
+            min-height: 150px;
+        }
+        
+        /* Grid para inputs múltiplos */
+        .input-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        /* Seção de arquivo */
+        .file-upload {
+            border: 2px dashed #E5E5E5;
+            padding: 30px;
+            text-align: center;
+            border-radius: 4px;
+            transition: all 0.3s;
+            cursor: pointer;
+            background: #F8F8F8;
+        }
+        
+        .file-upload:hover {
+            border-color: #1A2332;
+            background: white;
+        }
+        
+        .file-upload input[type="file"] {
+            display: none;
+        }
+        
+        .file-upload-label {
+            cursor: pointer;
+            display: block;
+        }
+        
+        .file-upload-icon {
+            font-size: 40px;
+            color: #1A2332;
+            margin-bottom: 10px;
+        }
+        
+        .file-upload-text {
+            color: #4A4A4A;
+            font-size: 14px;
+        }
+        
+        .file-upload-hint {
+            color: #7A7A7A;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        
+        /* Checkbox list */
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 10px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .checkbox-item input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            accent-color: #1A2332;
+        }
+        
+        .checkbox-item label {
+            margin: 0;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        
+        /* Divider */
+        .divider {
+            height: 2px;
+            background: #E5E5E5;
+            margin: 40px 0;
+        }
+        
+        /* Seção final */
+        .final-section {
+            background: #F8F8F8;
+            padding: 30px;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+        
+        .final-section h3 {
+            font-family: Georgia, serif;
+            color: #1A2332;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .final-section p {
+            font-size: 14px;
+            color: #4A4A4A;
+            line-height: 1.8;
+        }
+        
+        /* Botão de envio */
+        .submit-section {
+            padding: 40px;
+            text-align: center;
+            background: white;
+        }
+        
+        .submit-button {
+            background: #1A2332;
+            color: white;
+            border: none;
+            padding: 18px 60px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        
+        .submit-button:hover {
+            background: #2A3342;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(26, 35, 50, 0.3);
+        }
+        
+        .submit-button:active {
+            transform: translateY(0);
+        }
+        
+        /* Rodapé */
+        footer {
+            background: #1A2332;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+        
+        .contact-info {
+            font-size: 13px;
+            line-height: 2;
+            opacity: 0.9;
+        }
+        
+        .contact-info strong {
+            opacity: 1;
+        }
+        
+        /* Responsivo */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                border-radius: 0;
+            }
+            
+            header, .intro, .form-section, .submit-section, footer {
+                padding: 30px 20px;
+            }
+            
+            .logo {
+                font-size: 42px;
+            }
+            
+            .company-name {
+                font-size: 22px;
+            }
+            
+            .intro h1 {
+                font-size: 26px;
+            }
+            
+            .input-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Arquivo selecionado - feedback visual */
+        .file-display {
+            margin-top: 15px;
+            padding: 12px 16px;
+            background: #E8F5E9;
+            border-left: 4px solid #2D5F4C;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #2D5F4C;
+            font-weight: 500;
+        }
+        
+        .file-display-icon {
+            margin-right: 8px;
+        }
+        
+        /* Botão desabilitado */
+        .submit-button:disabled {
+            background: #7A7A7A;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .submit-button:disabled:hover {
+            background: #7A7A7A;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        /* Animação de loading no botão */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading-spinner {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .success-message {
+            display: none;
+            background: #2D5F4C;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        .success-message.show {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
